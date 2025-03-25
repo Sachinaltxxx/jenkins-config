@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/Sachinalt/devOps.git'
+                 git branch: 'main', url: 'https://github.com/Sachinalt/devOps.git'
             }
         }
         stage('Build') {
